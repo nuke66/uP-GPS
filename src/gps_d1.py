@@ -28,7 +28,7 @@ comm = machine.UART(0, 9600, parity=None, stop=1, bits=8,rx=machine.Pin(1), tx=m
 pageNo = 1 # page number to display
 currPageNo = 3 # current page number
 # set up button
-btn = machine.Pin(13, machine.Pin.IN, machine.Pin.PULL_UP)
+btn = machine.Pin(13, machine.Pin.IN, machine.Pin.PULL_DOWN)
 lastIntTime = time.ticks_ms()
 
 # set up interrupt function
