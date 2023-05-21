@@ -25,6 +25,7 @@ scl=machine.Pin(5) # GP5, Pin 7
 
 i2c=machine.I2C(0,sda=sda, scl=scl, freq=400000)
 #print("Device id: {0}".format(hex(i2c.scan())))
+#print("Device id: {0}".format(i2c.scan()))
 from ssd1306 import SSD1306_I2C
 oled = SSD1306_I2C(128, 64, i2c)
 
